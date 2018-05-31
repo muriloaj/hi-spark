@@ -3,9 +3,6 @@ package com.github.muriloaj.hispark;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static spark.Spark.get;
 import static spark.Spark.stop;
 
@@ -19,8 +16,6 @@ public class HelloSpark {
         get("/hello", (req, res) -> "Hello Spark");
 
         get("/stop", (req, res) -> {
-            Map<String, Object> model = new HashMap<>();
-
             logger.info("BBye Baby John ......");
             stop();
             return "bye....";
