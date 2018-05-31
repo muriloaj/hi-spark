@@ -17,12 +17,8 @@ repositories {
 dependencies {
     compile "com.sparkjava:spark-core:2.7.2" // add to build.gradle (for Java users)
     compile "com.sparkjava:spark-kotlin:1.0.0-alpha" // add to build.gradle (for Kotlin users)
+    compile "org.slf4j:slf4j-simple:1.7.25"
 
-    compile 'org.apache.commons:commons-lang3:3.7'
-    compile 'com.mashape.unirest:unirest-java:1.4.9'
-    compile 'joda-time:joda-time:2.9.9'
-
-  
 }
  
 task wrapper(type: Wrapper) {
